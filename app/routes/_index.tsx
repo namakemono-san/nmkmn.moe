@@ -298,16 +298,16 @@ export default function Index() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/public/images/bg_1.png" alt="bg-1"></img>
+          <img src="/images/bg_1.png" alt="bg-1"></img>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/images/bg_2.png" alt="bg-2"></img>
+          <img src="/images/bg_2.png" alt="bg-2"></img>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/images/bg_3.png" alt="bg-3"></img>
+          <img src="/images/bg_3.png" alt="bg-3"></img>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/images/bg_4.png" alt="bg-4"></img>
+          <img src="/images/bg_4.png" alt="bg-4"></img>
         </SwiperSlide>
       </Swiper>
       <div className="main">
@@ -339,7 +339,7 @@ export default function Index() {
               <div className="content">
                 <div className="icon">
                   <img
-                    src="public/images/avatar.webp"
+                    src="/images/avatar.webp"
                     alt="avatar"
                     draggable="false"
                   />
