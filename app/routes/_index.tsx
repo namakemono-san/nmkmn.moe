@@ -194,6 +194,10 @@ export default function Index() {
     };
   }, [timestamp, timestampRaw]);
 
+  const capitalize = function (value: string) {
+    return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+  };
+
   function connectWebSocket() {
     const ws = new WebSocket("wss://api.lanyard.rest/socket");
 
@@ -217,7 +221,7 @@ export default function Index() {
 
       const activities = d.activities.filter((a) => a.type !== 4);
       if (activities.length === 0) {
-        setStatus(d.discord_status);
+        setStatus("  " + capitalize(d.discord_status));
         setLargeImage("");
         setSmallImage("");
         setActivity("");
