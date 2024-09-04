@@ -28,7 +28,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "namakemono" },
+    { name: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "namakemono" },
+    { name: "twitter:description", content: "Hi! I'm namakemono :)" },
+    { title: "nmkmn.moe" },
     {
       name: "description",
       content: "Hi! I'm namakemono :)",
@@ -37,9 +41,17 @@ export const meta: MetaFunction = () => {
       name: "theme-color",
       content: "#b4f0faa8",
     },
-    { name: "og:site_name", content: "nmkmn.moe" },
     { name: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { name: "twitter:card", content: "summary_large_image" },
+    { name: "og:site_name", content: "nmkmn.moe" },
+    { name: "og:title", content: "namakemono" },
+    {
+      name: "og:description",
+      content: "Hi! I'm namakemono :)",
+    },
+    {
+      name: "og:url",
+      content: "https://nmkmn.moe",
+    },
   ];
 };
 
