@@ -27,7 +27,20 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "nmkmn.moe" }, { name: "description", content: ":(" }];
+  return [
+    { title: "namakemono" },
+    {
+      name: "description",
+      content: "Hi! I'm namakemono :)",
+    },
+    {
+      name: "theme-color",
+      content: "#b4f0faa8",
+    },
+    { name: "og:site_name", content: "nmkmn.moe" },
+    { name: "og:image", content: "/image/bg_1.png" },
+    { name: "twitter:card", content: "summary_large_image" },
+  ];
 };
 
 interface SocialLink {
