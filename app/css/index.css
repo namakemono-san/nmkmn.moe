@@ -33,14 +33,13 @@ body {
   inset: -30px;
 }
 
-.swiper-slide {
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
 }
 
 main {
@@ -86,7 +85,11 @@ main {
   grid-column: span var(--c);
   transition: transform 0.2s linear, background-color 0.2s linear;
   border-radius: 24px;
-  background-color: #defa;
+  background: linear-gradient(
+    160deg,
+    rgba(180, 240, 250, 0.66) 20%,
+    rgba(165, 195, 240, 0.66) 80%
+  );
   height: calc(var(--square-size) * var(--r) + var(--gap) * (var(--r) - 1));
   overflow: hidden;
   color: #000;
@@ -107,11 +110,16 @@ main {
 }
 
 .widget:hover {
-  background-color: #defc;
+  background: linear-gradient(
+    160deg,
+    rgba(180, 240, 250, 0.8) 20%,
+    rgba(165, 195, 240, 0.8) 80%
+  );
+  transform: perspective(300px) translateZ(10px);
 }
 
 .widget:active {
-  transform: perspective(300px) translateZ(-10px);
+  transform: perspective(300px) translateZ(-5px);
 }
 
 .widget a {
