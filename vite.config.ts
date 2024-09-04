@@ -1,5 +1,8 @@
 import { vitePlugin as remix } from "@remix-run/dev";
+
+//@ts-expect-error 形宣言エラーが出るため
 import { defineConfig } from "vite";
+//@ts-expect-error 形宣言エラーが出るため
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
@@ -13,4 +16,9 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  resolve: {
+      alias: {
+          "@": "./app/",
+      },
+  },
 });

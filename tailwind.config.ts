@@ -1,3 +1,4 @@
+//@ts-expect-error 形宣言エラーが出るため
 import type { Config } from "tailwindcss";
 
 export default {
