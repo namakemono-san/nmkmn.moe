@@ -38,7 +38,7 @@ export const meta: MetaFunction = () => {
       content: "#b4f0faa8",
     },
     { name: "og:site_name", content: "nmkmn.moe" },
-    { name: "og:image", content: "/image/bg_1.png" },
+    { name: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
     { name: "twitter:card", content: "summary_large_image" },
   ];
 };
