@@ -23,7 +23,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "../css/index.css";
 
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const meta: MetaFunction = () => {
@@ -291,27 +291,22 @@ export default function Index() {
         loop={true}
         spaceBetween={30}
         centeredSlides={true}
-        speed={1500}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
+        speed={2000}
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
         effect={"fade"}
-        modules={[Autoplay, EffectFade, Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Autoplay, EffectFade]}
       >
         <SwiperSlide>
-          <img src="/images/bg_1.png" alt="bg-1"></img>
+          <img src="/images/bg_1.png" alt="bg-1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/bg_2.png" alt="bg-2"></img>
+          <img src="/images/bg_2.png" alt="bg-2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/bg_3.png" alt="bg-3"></img>
+          <img src="/images/bg_3.png" alt="bg-3" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/bg_4.png" alt="bg-4"></img>
+          <img src="/images/bg_4.png" alt="bg-4" />
         </SwiperSlide>
       </Swiper>
       <div className="main">
