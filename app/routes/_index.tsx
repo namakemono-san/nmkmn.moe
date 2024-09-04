@@ -50,7 +50,7 @@ export const meta: MetaFunction = () => {
     },
     {
       property: "og:url",
-      content: "nmkmn.moe",
+      content: "https://nmkmn.moe",
     },
   ];
 };
