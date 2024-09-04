@@ -28,10 +28,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { name: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "namakemono" },
-    { name: "twitter:description", content: "Hi! I'm namakemono :)" },
+    { property: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
+    { property: "twitter:card", content: "summary_large_image" },
+    { property: "twitter:title", content: "namakemono" },
+    { property: "twitter:description", content: "Hi! I'm namakemono :)" },
     { title: "nmkmn.moe" },
     {
       name: "description",
@@ -41,16 +41,16 @@ export const meta: MetaFunction = () => {
       name: "theme-color",
       content: "#b4f0faa8",
     },
-    { name: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { name: "og:site_name", content: "nmkmn.moe" },
-    { name: "og:title", content: "namakemono" },
+    { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
+    { property: "og:site_name", content: "nmkmn.moe" },
+    { property: "og:title", content: "namakemono" },
     {
-      name: "og:description",
+      property: "og:description",
       content: "Hi! I'm namakemono :)",
     },
     {
-      name: "og:url",
-      content: "https://nmkmn.moe",
+      property: "og:url",
+      content: "nmkmn.moe",
     },
   ];
 };
