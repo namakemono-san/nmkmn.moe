@@ -11,10 +11,10 @@ import "./css/tailwind.css";
 
 export const meta: MetaFunction = () => {
   return [
-    { property: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:title", content: "namakemono" },
-    { property: "twitter:description", content: "Hi! I'm namakemono :)" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "namakemono" },
+    { name: "twitter:description", content: "Hi! I'm namakemono :)" },
+    { name: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
     { title: "nmkmn.moe" },
     {
       name: "description",
