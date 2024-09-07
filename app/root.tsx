@@ -1,3 +1,4 @@
+// import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -7,6 +8,35 @@ import {
 } from "@remix-run/react";
 
 import "./css/tailwind.css";
+
+// export const meta: MetaFunction = () => {
+//   return [
+//     { property: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
+//     { property: "twitter:card", content: "summary_large_image" },
+//     { property: "twitter:title", content: "namakemono" },
+//     { property: "twitter:description", content: "Hi! I'm namakemono :)" },
+//     { title: "nmkmn.moe" },
+//     {
+//       name: "description",
+//       content: "Hi! I'm namakemono :)",
+//     },
+//     {
+//       name: "theme-color",
+//       content: "#b4f0faa8",
+//     },
+//     { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
+//     { property: "og:site_name", content: "nmkmn.moe" },
+//     { property: "og:title", content: "namakemono" },
+//     {
+//       property: "og:description",
+//       content: "Hi! I'm namakemono :)",
+//     },
+//     {
+//       property: "og:url",
+//       content: "https://nmkmn.moe",
+//     },
+//   ];
+// };
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

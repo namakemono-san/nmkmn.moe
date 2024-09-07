@@ -1,4 +1,3 @@
-import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
 import { useEffect, useState } from "react";
@@ -25,35 +24,6 @@ import "../css/index.css";
 
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-export const meta: MetaFunction = () => {
-  return [
-    { property: "twitter:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:title", content: "namakemono" },
-    { property: "twitter:description", content: "Hi! I'm namakemono :)" },
-    { title: "nmkmn.moe" },
-    {
-      name: "description",
-      content: "Hi! I'm namakemono :)",
-    },
-    {
-      name: "theme-color",
-      content: "#b4f0faa8",
-    },
-    { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { property: "og:site_name", content: "nmkmn.moe" },
-    { property: "og:title", content: "namakemono" },
-    {
-      property: "og:description",
-      content: "Hi! I'm namakemono :)",
-    },
-    {
-      property: "og:url",
-      content: "https://nmkmn.moe",
-    },
-  ];
-};
 
 interface SocialLink {
   name: string;
