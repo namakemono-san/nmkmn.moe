@@ -11,6 +11,18 @@ import "./css/tailwind.css";
 
 export const meta: MetaFunction = () => {
   return [
+    { property: "og:site_name", content: "nmkmn.moe" },
+    { property: "og:title", content: "namakemono" },
+    {
+      property: "og:description",
+      content: "Hi! I'm namakemono :)",
+    },
+    {
+      property: "og:url",
+      content: "https://nmkmn.moe",
+    },
+    { property: "og:website", content}
+    { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "namakemono" },
     { name: "twitter:description", content: "Hi! I'm namakemono :)" },
@@ -23,17 +35,6 @@ export const meta: MetaFunction = () => {
     {
       name: "theme-color",
       content: "#b4f0faa8",
-    },
-    { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
-    { property: "og:site_name", content: "nmkmn.moe" },
-    { property: "og:title", content: "namakemono" },
-    {
-      property: "og:description",
-      content: "Hi! I'm namakemono :)",
-    },
-    {
-      property: "og:url",
-      content: "https://nmkmn.moe",
     },
   ];
 };
