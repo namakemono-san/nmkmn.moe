@@ -26,6 +26,8 @@ export const meta: MetaFunction = () => {
       content: "website",
     },
     { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "namakemono" },
     { name: "twitter:description", content: "Hi! I'm namakemono :)" },
