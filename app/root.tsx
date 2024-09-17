@@ -21,7 +21,10 @@ export const meta: MetaFunction = () => {
       property: "og:url",
       content: "https://nmkmn.moe",
     },
-    { property: "og:website", content: "https://nmkmn.moe" },
+    {
+      property: "og:type",
+      content: "website",
+    },
     { property: "og:image", content: "https://nmkmn.moe/images/bg_1.png" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "namakemono" },

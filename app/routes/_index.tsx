@@ -330,7 +330,7 @@ export default function Index() {
             style={{ "--columns": "4", height: "178px" } as React.CSSProperties}
           >
             <div id="discord">
-              <div className="content">
+              <div className="content flex">
                 <div className="icon">
                   <img
                     src="/images/avatar.webp"
@@ -366,6 +366,13 @@ export default function Index() {
               </div>
             </div>
           </div>
+
+          {/* <div
+            className="widget js"
+            style={{ "--columns": "4", height: "178px" } as React.CSSProperties}
+          >
+            <img src="https://osu-sig.vercel.app/card?user=namakemono_san&mode=std&lang=en&animation=true&mini=true" />
+          </div> */}
         </main>
       </div>
     </>
