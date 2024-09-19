@@ -39,7 +39,7 @@ export const meta: MetaFunction = () => {
     },
     {
       name: "theme-color",
-      content: "#b4f0faa8",
+      content: "#b4f0fa",
     },
   ];
 };
