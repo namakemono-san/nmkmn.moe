@@ -158,6 +158,13 @@ const social_links: SocialLink[] = [
     icon: MdLink,
     color: "#1f70ff",
   },
+  {
+    name: "てる (ter3q)",
+    user_id: "ter3q",
+    url: "https://ter3q.com/",
+    icon: MdLink,
+    color: "#1f70ff",
+  },
 ];
 
 export default function Index() {
