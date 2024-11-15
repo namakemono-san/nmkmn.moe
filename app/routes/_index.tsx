@@ -125,8 +125,8 @@ const social_links: SocialLink[] = [
   },
   {
     name: "osu!",
-    user_id: "namakemono_san",
-    url: "https://osu.ppy.sh/u/namakemono_san",
+    user_id: "namakemono",
+    url: "https://osu.ppy.sh/u/namakemono",
     icon: SiOsu,
     color: "#f6a",
   },
