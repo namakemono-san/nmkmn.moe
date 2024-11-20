@@ -165,6 +165,13 @@ const social_links: SocialLink[] = [
     icon: MdLink,
     color: "#1f70ff",
   },
+  {
+    name: "だるかす (drks)",
+    user_id: "darui3018823",
+    url: "https://solo.to/darui3018823",
+    icon: MdLink,
+    color: "#1f70ff",
+  },
 ];
 
 export default function Index() {
