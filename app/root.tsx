@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import "./css/tailwind.css";
+import "./css/index.css";
 
 export const meta: MetaFunction = () => {
   return [
