@@ -25,6 +25,13 @@ const friends: {
             url: "https://solo.to/darui3018823",
             label: "@darui3018823",
             color: "rgba(67, 151, 163, .4)"
+        },
+        {
+            id: "nemmy",
+            name: "ねみー",
+            url: "https://solo.to/nmy",
+            label: "@nmy",
+            color: "rgba(54, 252, 121, .4)"
         }
     ]
 
