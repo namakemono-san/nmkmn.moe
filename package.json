@@ -19,10 +19,10 @@
     "@pixi/mesh-extras": "^7.4.2",
     "@pixi/sound": "^6.0.1",
     "@pixi/sprite": "^7.4.2",
-    "@remix-run/node": "^2.11.2",
-    "@remix-run/react": "^2.11.2",
-    "@remix-run/serve": "^2.11.2",
-    "@remix-run/server-runtime": "^2.15.0",
+    "@remix-run/node": "^2.16.0",
+    "@remix-run/react": "^2.16.0",
+    "@remix-run/serve": "^2.16.0",
+    "@remix-run/server-runtime": "^2.16.0",
     "isbot": "^5.1.17",
     "pixi-spine": "^4.0.4",
     "pixi.js": "7",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@metronome-sh/dev-error-boundary": "^0.0.10",
-    "@remix-run/dev": "^2.11.2",
+    "@remix-run/dev": "^2.16.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^8.4.0",
@@ -52,9 +52,5 @@
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^5.0.1"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "packageManager": "yarn@4.4.1"
+  }
 }
