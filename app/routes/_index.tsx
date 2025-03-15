@@ -10,11 +10,15 @@ import Friends from "~/components/core/Friends";
 
 interface SectionProps {
   title: string;
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ title, className, children }) => (
+const Section: React.FC<SectionProps> = ({
+  title,
+  className = "",
+  children,
+}) => (
   <div className={className}>
     <div className="text-white text-lg font-bold bg-theme bg-opacity-50 py-1 px-4 rounded-xl backdrop-blur-sm">
       {title}
@@ -75,11 +79,13 @@ const Index: React.FC = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="relative z-10 flex flex-col left-0 top-0 right-0 h-content min-h-screen overflow-hidden">
-        <div className="flex m-8 flex-col flex-wrap flex-grow relative">
+
+      <div className="relative z-10 flex flex-col left-0 top-0 right-0 min-h-screen overflow-hidden">
+        <div className="flex flex-col md:flex-row gap-4 m-2 md:m-8 flex-grow relative">
           <Section title="Accounts" className="w-full md:w-[40%]">
             <Accounts />
           </Section>
+
           <Section title="Friends" className="w-full md:w-[40%]">
             <Friends />
           </Section>
