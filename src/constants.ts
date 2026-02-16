@@ -25,7 +25,7 @@ export const socials = [
   { label: "X", url: "https://x.com/nmkmn_moe", icon: FaXTwitter },
   { label: "GitHub", url: "https://github.com/namakemono-san", icon: FaGithub },
   { label: "YouTube", url: "https://www.youtube.com/@nmkmn_moe", icon: FaYoutube },
-  { label: "Discord", url: "https://discord.com/users/686547120534454315", icon: FaDiscord },
+  { label: "Discord", url: "https://discord.com/users/641555810325102593", icon: FaDiscord },
   { label: "Steam", url: "https://steamcommunity.com/id/namakemono_san", icon: FaSteam },
   { label: "osu!", url: "https://osu.ppy.sh/users/21719026", icon: SiOsu },
   { label: "Mail", url: "mailto:contact@nmkmn.moe", icon: FaEnvelope },
@@ -37,7 +37,7 @@ export interface SubLink {
 }
 
 export const subLinks: SubLink[] = [
-  { label: "みゅー (3yu)", url: "https://solo.to/3yu" },
+  { label: "みゅー (3yu)", url: "https://e-z.bio/3yu" },
   { label: "てる (ter3q)", url: "https://ter3q.com/" },
   { label: "だるかす (darui3018823)", url: "https://solo.to/darui3018823" },
   { label: "ねみー (nmy)", url: "https://solo.to/nmy" },
