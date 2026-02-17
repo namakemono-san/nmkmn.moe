@@ -78,3 +78,39 @@ export const activityTypeLabels: Record<number, string> = {
   3: "Watching",
   5: "Competing in",
 };
+
+export interface Project {
+  name: string;
+  repo: string;
+  url?: string;
+  blog?: string;
+  video?: string;
+}
+
+export const projects: Project[] = [
+  {
+    name: "nmkmn.moe",
+    repo: "namakemono-san/nmkmn.moe",
+    url: "https://nmkmn.moe",
+  },
+  {
+    name: "osu! mapping utility",
+    repo: "namakemono-san/osu-mapping-utility",
+  },
+  {
+    name: "osu-mirror-rs",
+    repo: "namakemono-san/osu-mirror-rs",
+  },
+  {
+    name: "YMM-RPC",
+    repo: "namakemono-san/YMM-RPC",
+  },
+  {
+    name: "YMM4-CloudSync",
+    repo: "namakemono-san/YMM4-CloudSync",
+  },
+  {
+    name: "TaikoStar",
+    repo: "namakemono-san/TaikoStar",
+  },
+];

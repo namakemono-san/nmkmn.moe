@@ -6,6 +6,7 @@ import './styles/index.css'
 import Home from './pages/Home'
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
+import Projects from './pages/Projects'
 import Tools from './pages/Tools'
 import NotFound from './pages/NotFound'
 import ErrorPage from './pages/ErrorPage'
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
     <Routes>
       <Route errorElement={<ErrorPage />}>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/tools" element={<Tools />} />

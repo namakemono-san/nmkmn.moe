@@ -6,7 +6,7 @@ function ErrorPage() {
   const error = useRouteError();
   const total = BG_IMAGES.length;
 
-  let message = "予期しないエラーが発生しました。しばらくしてからもう一度お試しください。";
+  let message = "An unexpected error occurred. Please try again later.";
   if (isRouteErrorResponse(error)) {
     message = error.statusText || message;
   } else if (error instanceof Error) {
@@ -34,7 +34,7 @@ function ErrorPage() {
         <div className="rounded-2xl border border-white/10 bg-white/5 px-12 py-16 text-center backdrop-blur-xl">
           <p className="mb-2 text-4xl">⚠️</p>
           <h1 className="mb-3 text-xl font-bold tracking-tight text-white">
-            エラーが発生しました
+            Something went wrong
           </h1>
           <p className="mb-6 text-sm text-white/50">
             {message}
@@ -43,7 +43,7 @@ function ErrorPage() {
             to="/"
             className="inline-block rounded-xl border border-white/10 bg-white/5 px-6 py-2 text-sm text-white/70 transition-all duration-200 hover:bg-white/15 hover:text-white"
           >
-            ホームに戻る
+            Back to Home
           </Link>
         </div>
       </main>

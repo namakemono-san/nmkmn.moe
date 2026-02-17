@@ -41,7 +41,7 @@ function Home() {
           <img
             src="/konata.gif"
             alt="konata"
-            className="pointer-events-none absolute -top-17 right-6 z-20 w-24 drop-shadow-lg max-md:w-16 max-md:-top-14 max-md:right-2"
+            className="pointer-events-none absolute -top-17 right-6 z-20 w-24 drop-shadow-lg"
           />
 
           <div className="flex w-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-xl">
@@ -67,13 +67,13 @@ function Home() {
                   <div className="-mt-17 mb-3 animate-float">
                     <img
                       src={AVATAR_URL}
-                      alt="なまけもの"
+                      alt="なまけもの (namakemono)"
                       className="h-28 w-28 rounded-full border-4 border-white/10 object-cover shadow-lg"
                     />
                   </div>
 
                   <h1 className="mb-1 text-3xl font-bold tracking-tight text-white">
-                    なまけもの
+                    なまけもの (namakemono)
                   </h1>
                   <p className="h-5 text-sm text-white/40">
                     {typingText}

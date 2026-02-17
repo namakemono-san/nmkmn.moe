@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import { BG_IMAGES, BG_DURATION } from "../constants";
 
 function Tools() {
+  useEffect(() => { document.title = "Tools - nmkmn.moe"; }, []);
   const total = BG_IMAGES.length;
 
   return (

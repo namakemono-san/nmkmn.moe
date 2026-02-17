@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import Header from "../components/Header";
 import { allPostMetas } from "../lib/posts";
 import { BG_IMAGES, BG_DURATION } from "../constants";
 
 function BlogList() {
+  useEffect(() => { document.title = "Blog - nmkmn.moe"; }, []);
   const total = BG_IMAGES.length;
 
   return (
@@ -61,7 +63,7 @@ function BlogList() {
         </div>
 
         {allPostMetas.length === 0 && (
-          <p className="text-center text-white/40">まだ記事がありません。</p>
+          <p className="text-center text-white/40">No posts yet.</p>
         )}
       </main>
     </div>

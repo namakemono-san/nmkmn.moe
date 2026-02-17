@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -8,6 +9,9 @@ import { BG_IMAGES, BG_DURATION } from "../constants";
 function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPostBySlug(slug) : undefined;
+  useEffect(() => {
+    document.title = post ? `${post.title} - nmkmn.moe` : "Not Found - nmkmn.moe";
+  }, [post]);
   const total = BG_IMAGES.length;
 
   return (
@@ -32,7 +36,7 @@ function BlogPost() {
           to="/blog"
           className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 transition-colors hover:text-white/70"
         >
-          ← 記事一覧に戻る
+          ← Back to Blog
         </Link>
 
         {post ? (
@@ -64,12 +68,12 @@ function BlogPost() {
           </article>
         ) : (
           <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl">
-            <p className="text-white/50">記事が見つかりませんでした。</p>
+            <p className="text-white/50">Post not found.</p>
             <Link
               to="/blog"
               className="mt-4 inline-block text-sm text-white/40 transition-colors hover:text-white/70"
             >
-              ← 記事一覧に戻る
+              ← Back to Blog
             </Link>
           </div>
         )}

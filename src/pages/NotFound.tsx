@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import Header from "../components/Header";
 import { BG_IMAGES, BG_DURATION } from "../constants";
 
 function NotFound() {
+  useEffect(() => { document.title = "Not Found - nmkmn.moe"; }, []);
   const total = BG_IMAGES.length;
 
   return (
@@ -28,16 +30,16 @@ function NotFound() {
             404
           </p>
           <h1 className="mb-3 text-xl font-bold tracking-tight text-white">
-            ページが見つかりません
+            Page Not Found
           </h1>
           <p className="mb-6 text-sm text-white/50">
-            お探しのページは存在しないか、移動した可能性があります。
+            The page you're looking for doesn't exist or has been moved.
           </p>
           <Link
             to="/"
             className="inline-block rounded-xl border border-white/10 bg-white/5 px-6 py-2 text-sm text-white/70 transition-all duration-200 hover:bg-white/15 hover:text-white"
           >
-            ホームに戻る
+            Back to Home
           </Link>
         </div>
       </main>
