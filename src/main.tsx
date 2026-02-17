@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/tools" element={<Tools />} />
+        <Route path="/donate" Component={() => { window.location.href = "https://ko-fi.com/namakemono_san"; return null; }} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
