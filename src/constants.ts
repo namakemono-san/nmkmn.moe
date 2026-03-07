@@ -17,8 +17,8 @@ export const BG_DURATION = 24;
 
 export const TYPING_WORDS = [
   "Full Stack Developer",
-  "High School Student",
-
+  "Infrastructure Engineer",
+  "Student Developer"
 ];
 
 export const socials = [
