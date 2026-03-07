@@ -13,14 +13,14 @@ function MusicPlayer({ entered }: { entered: boolean }) {
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio || !entered) return;
-    audio.volume = 0.15;
+    audio.volume = 0.05;
     audio.play().then(() => setIsPlaying(true)).catch(() => {});
   }, [entered]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    audio.volume = 0.15;
+    audio.volume = 0.05;
     if (isPlaying) {
       audio.play().catch(() => {});
     } else {
