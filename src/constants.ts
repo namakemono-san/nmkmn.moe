@@ -37,10 +37,8 @@ export interface SubLink {
 }
 
 export const subLinks: SubLink[] = [
-  { label: "みゅー (3yu)", url: "https://e-z.bio/3yu" },
   { label: "てる (ter3q)", url: "https://ter3q.com/" },
-  { label: "だるかす (darui3018823)", url: "https://solo.to/darui3018823" },
-  { label: "ねみー (nmy)", url: "https://solo.to/nmy" },
+  { label: "だるかす (darui3018823)", url: "https://daruks.com/" },
 ];
 
 export interface Track {
