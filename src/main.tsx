@@ -8,6 +8,9 @@ import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 import Projects from './pages/Projects'
 import Tools from './pages/Tools'
+import Ymm4 from './pages/Ymm4'
+import Ymm4PrivacyPolicy from './pages/Ymm4PrivacyPolicy'
+import Ymm4TermsOfService from './pages/Ymm4TermsOfService'
 import NotFound from './pages/NotFound'
 import ErrorPage from './pages/ErrorPage'
 
@@ -21,6 +24,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/tools" element={<Tools />} />
+        <Route path="/ymm4" element={<Ymm4 />} />
+        <Route path="/ymm4/privacy-policy" element={<Ymm4PrivacyPolicy />} />
+        <Route path="/ymm4/terms-of-service" element={<Ymm4TermsOfService />} />
         <Route path="/donate" Component={() => { window.location.href = "https://ko-fi.com/namakemono_san"; return null; }} />
         <Route path="*" element={<NotFound />} />
       </Route>
